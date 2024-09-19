@@ -1,1 +1,47 @@
-{"manifest_version":2,"name":"AutoSkipTracer","description":"Search for people on TruePeopleSearch.com and find their address in a CSV file.","version":"1.1","icons":{"16":"UTZ.png"},"permissions":["identity","identity.email","activeTab","downloads","storage","https://*.truepeoplesearch.com/","https://*.*"],"content_security_policy":"script-src 'self' https://www.truepeoplesearch.com https://opencorporates.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; object-src 'self'","browser_action":{"default_icon":"UTZ.png","default_popup":"popup.html"},"background":{"scripts":["background.js"],"persistent":false},"content_scripts":[{"matches":["https://*/*"],"js":["jquery-3.6.0.min.js","content.js"]}]}
+{
+   "manifest_version": 2,
+   "name": "AutoSkipTracer",
+   "description": "Search for people on TruePeopleSearch.com and find their address in a CSV file.",
+   "version": "1.1",
+   "icons": {
+      "16": "UTZ.png"
+   },
+   "permissions": [
+      "identity",
+      "identity.email",
+      "activeTab",
+      "downloads",
+      "storage",
+      "https://*.truepeoplesearch.com/",
+	 "https://*.cyberbackgroundchecks.com/",
+		
+      "https://*.*"
+   ],
+   "content_security_policy": "script-src 'self' https://www.cyberbackgroundchecks.com https://www.truepeoplesearch.com https://opencorporates.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; object-src 'self'",
+   "browser_action": {
+      "default_icon": "UTZ.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "scripts": [
+         "background.js"
+      ],
+      "persistent": false
+   },
+   "content_scripts": [
+      {
+         "matches": [
+            "https://*/*"
+         ],
+         "js": [
+            "jquery-3.6.0.min.js",
+            "content.js"
+         ]
+      }
+   ]
+}
+
+
+
+
+  
