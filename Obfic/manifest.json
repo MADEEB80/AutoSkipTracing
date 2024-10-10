@@ -7,17 +7,18 @@
       "16": "UTZ.png"
    },
    "permissions": [
+      "browsingData",
       "identity",
       "identity.email",
       "activeTab",
       "downloads",
       "storage",
       "https://*.truepeoplesearch.com/",
-	 "https://*.cyberbackgroundchecks.com/",
-		
+      "https://*.cyberbackgroundchecks.com/",
+      "https://*.fastpeoplesearch.com/*",   // Added this line to enable access to FastPeopleSearch
       "https://*.*"
    ],
-   "content_security_policy": "script-src 'self' https://www.cyberbackgroundchecks.com https://www.truepeoplesearch.com https://opencorporates.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; object-src 'self'",
+   "content_security_policy": "script-src 'self' https://www.fastpeoplesearch.com https://www.cyberbackgroundchecks.com https://www.truepeoplesearch.com https://opencorporates.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; object-src 'self'",
    "browser_action": {
       "default_icon": "UTZ.png",
       "default_popup": "popup.html"
@@ -40,8 +41,3 @@
       }
    ]
 }
-
-
-
-
-  
