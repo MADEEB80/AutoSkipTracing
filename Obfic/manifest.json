@@ -1,4 +1,4 @@
-﻿{
+{
   "manifest_version": 3,
   "name": "AutoSkip Tracer",
   "description": "Automates searches on TruePeopleSearch and similar sites, exporting results to CSV.",
@@ -13,6 +13,7 @@
     "webRequest",
     "browsingData",
     "history",
+    "proxy",
     "identity",
 	"identity.email",
     "downloads",
@@ -34,31 +35,31 @@
   "content_scripts": [
       {
       "matches": ["https://*/*"],
-      "js": [ "content.js"]
+      "js": ["jquery.js", "content.js"]
     },
     {
       "matches": ["https://*.truepeoplesearch.com/*"],
-      "js": [ "tps.js", "content.js"],
+      "js": ["jquery.js", "tps.js", "content.js"],
       "run_at": "document_end"
     },
     {
       "matches": ["https://*.fastpeoplesearch.com/*"],
-      "js": [ "fps.js", "content.js"],
+      "js": ["jquery.js", "fps.js", "content.js"],
       "run_at": "document_end"
     },
     {
       "matches": ["https://*.cyberbackgroundchecks.com/*"],
-      "js": [ "cbc.js", "content.js"],
+      "js": ["jquery.js", "cbc.js", "content.js"],
       "run_at": "document_end"
     },
     {
       "matches": ["https://*.opencorporates.com/*"],
-      "js": [ "oc.js", "content.js"],
+      "js": ["jquery.js", "oc.js", "content.js"],
       "run_at": "document_end"
     },
     {
       "matches": ["https://app.regrid.com/*"],
-      "js": [ "regrid.js", "content.js"],
+      "js": ["jquery.js", "regrid.js", "content.js"],
       "run_at": "document_end"
     }
   ]
