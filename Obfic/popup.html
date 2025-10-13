@@ -35,23 +35,23 @@
            Website Selection Form
            ----------------------------------------- -->
       <form id="websiteForm">
-        <label class="Radiolabel">
+        <label class="Radiolabel" title="TruePeopleSearch.com پر تلاش کرنے کے لیے اسے منتخب کریں۔">
           <input type="radio" name="website" value="truepeoplesearch" checked />
           <span>TruePeople</span>
         </label>
-        <label class="Radiolabel">
+        <label class="Radiolabel" title="CyberBackgroundChecks.com پر تلاش کرنے کے لیے اسے منتخب کریں۔">
           <input type="radio" name="website" value="cyberbackgroundchecks" />
           <span>CyberBackground</span>
         </label>
-        <label class="Radiolabel">
+        <label class="Radiolabel" title="OpenCorporates.com پر کمپنی کا ڈیٹا تلاش کرنے کے لیے اسے منتخب کریں۔">
           <input type="radio" name="website" value="opencorporates" />
           <span>OpenCorporates</span>
         </label>
-        <label class="Radiolabel">
+        <label class="Radiolabel" title="Regrid.com پر پراپرٹی کا ڈیٹا تلاش کرنے کے لیے اسے منتخب کریں۔">
           <input type="radio" name="website" value="Regrid" checked />
           <span>Regrid</span>
         </label>
-		 <label class="Radiolabel">
+		 <label class="Radiolabel" title="FastPeopleSearch.com پر تلاش کرنے کے لیے اسے منتخب کریں۔">
           <input type="radio" name="website" value="fastpeoplesearch" checked />
           <span>FastPeople</span>
         </label>
@@ -75,6 +75,7 @@
           class="tutorial-button"
           target="_blank"
           rel="noopener noreferrer"
+          title="ٹیوٹوریلز (لنک کھل جائے گا) - یوٹیوب پر ویڈیو ٹیوٹوریلز دیکھنے کے لیے کلک کریں۔"
           >Tutorials</a
         >
         <a
@@ -82,54 +83,55 @@
           class="update-button"
           target="_blank"
           rel="noopener noreferrer"
+          title="اپڈیٹس حاصل کریں (فائل ڈاؤن لوڈ ہوگی) - ایپلیکیشن کا تازہ ترین ورژن ڈاؤن لوڈ کرنے کے لیے کلک کریں۔"
           >Get Updates</a
         >
-        <button type="button" id="default_preferences">Default Settings</button>
-        <button type="button" id="save_preferences">Save Settings</button>
+        <button type="button" id="default_preferences" title="ڈیفالٹ سیٹنگز - تمام نکاسی کی ترجیحات کو ان کی ڈیفالٹ ویلیوز پر ری سیٹ کرنے کے لیے کلک کریں۔">Default Settings</button>
+        <button type="button" id="save_preferences" title="سیٹنگز محفوظ کریں - اپنی موجودہ نکاسی کی ترجیحات کو مستقبل کے استعمال کے لیے محفوظ کرنے کے لیے کلک کریں۔">Save Settings</button>
       </div>
 
       <!-- Extraction Preferences Options -->
       <label for="name_flag">Add Name:</label>
-      <select id="name_flag">
+      <select id="name_flag" title="نام شامل کریں - منتخب کریں کہ شخص کا نام نکالے گئے ڈیٹا میں شامل کرنا ہے یا نہیں۔">
         <option value="0">No</option>
         <option value="1">Yes</option>
       </select>
 
       <label for="age_flag">Age:</label>
-      <select id="age_flag"style="width: 9%" >
+      <select id="age_flag"style="width: 9%" title="عمر - منتخب کریں کہ عمر کی معلومات کیسے شامل کی جائیں: صرف عمر، یا عمر کے ساتھ تاریخ پیدائش (ڈی او بی)۔">
         <option value="0">No</option>
         <option value="1">Age</option>
         <option value="2">Age+DOB</option>
       </select>
 
       <label for="phone_total">Phone:</label>
-      <input type="number" id="phone_total"  min="0" value="10" />
+      <input type="number" id="phone_total"  min="0" value="10" title="فون کی تعداد - ہر شخص کے لیے نکالے جانے والے فون نمبروں کی زیادہ سے زیادہ تعداد مقرر کریں۔" />
 
       <label for="email_total">Email:</label>
-      <input type="number" id="email_total"  min="0" value="5" />
+      <input type="number" id="email_total"  min="0" value="5" title="ایمیل کی تعداد - ہر شخص کے لیے نکالے جانے والے ای میل پتوں کی زیادہ سے زیادہ تعداد مقرر کریں۔" />
 
       <label for="address_flag">Add Adrs:</label>
-      <select id="address_flag"style="width: 9%" >
+      <select id="address_flag"style="width: 9%" title="پتہ شامل کریں - پتے کی فارمیٹنگ کا انتخاب کریں: ایک کالم میں یا دو کالموں میں تقسیم۔">
         <option value="0">No</option>
         <option value="1">1 Col</option>
         <option value="2">2 Cols</option>
       </select>
 	  
 	  <label for="addUrl">Add Url:</label>
-      <select id="addUrl">
+      <select id="addUrl" title="یو آر ایل شامل کریں - منتخب کریں کہ ماخذ یو آر ایل کو نکالے گئے ڈیٹا میں شامل کرنا ہے یا نہیں۔">
         <option value="0">No</option>
         <option value="1">Yes</option>
       </select>
       <br />
 
       <label for="Trim_Phone_flag">Trim Nums:</label>
-      <select id="Trim_Phone_flag">
+      <select id="Trim_Phone_flag" title="نمبرز کو ٹرم کریں - منتخب کریں کہ فون نمبروں سے فارمیٹنگ (جیسے ڈیش اور بریکٹ) ہٹانی ہے یا نہیں۔">
         <option value="1">Yes</option>
         <option value="0">No</option>
       </select>
 
       <label for="email_type_flag">Email Type:</label>
-      <select id="email_type_flag"style="width: 12%">
+      <select id="email_type_flag"style="width: 12%" title="ایمیل کی قسم - ڈومین کی قسم کے مطابق ای میلز کو فلٹر کریں۔">
         <option value="0">All</option>
         <option value="1">Spc(.com</option>
         <option value="2">All(.com)</option>
@@ -137,13 +139,13 @@
       </select>
 
       <label for="email_left_flag">Email At:</label>
-      <select id="email_left_flag">
+      <select id="email_left_flag" title="ایمیل میں '@' کی جگہ - نکالے گئے ای میلز میں '@' علامت کی جگہ کا انتخاب کریں۔">
         <option value="0">Right</option>
         <option value="1">Left</option>
       </select>
 
      <label for="SheetFormat">Sheet Format:</label>
-<select id="Sheet_Format" style="width: 23%">
+<select id="Sheet_Format" style="width: 23%" title="شیٹ فارمیٹ - اسپریڈشیٹ میں پیسٹ کرنے کے لیے آؤٹ پٹ فارمیٹ منتخب کریں۔ اس سے ڈیٹا کلپ بورڈ پر کاپی ہونے کا طریقہ متاثر ہوتا ہے۔">
   <option value="1">Double Click</option>
   <option value="0">Special Paste</option>
   <option value="2">Ph Dbl Click & Email Sp</option>
@@ -155,32 +157,36 @@
 <!-- Additional Options Shown Only When "Number Separator" is Selected -->
 <div id="numberSeparatorOptions" style="display: none;">
   <label for="mergeOption">Merge:</label>
-  <select id="mergeOption" style="width: 20%">
+  <select id="mergeOption" style="width: 10%" title="فون کی اقسام کو ضم کریں - مختلف فون اقسام (وائرلیس، وی او آئی پی، پیجر) کو ایک ہی زمرے میں یکجا کریں۔">
     <option value="0">No</option>
     <option value="1">Wireless + VOIP</option>
     <option value="2">Wireless + VOIP + Pager</option>
 	 <option value="3">VOIP + Pager</option>
   </select> 
   <label for="wirelessCount">Wireless:</label>
-  <input type="number" id="wirelessCount" min="0" value="4" style=" margin-right: 10px;">
+  <input type="number" id="wirelessCount" min="0" value="4"  title="وائرلیس کی تعداد - 'نمبر سیپریٹر' فارمیٹ فعال ہونے پر نکالے جانے والے وائرلیس نمبروں کی زیادہ سے زیادہ تعداد مقرر کریں۔">
   
   <label for="landlineCount">Landline:</label>
-  <input type="number" id="landlineCount" min="0" value="4" style=" margin-right: 10px;">
+  <input type="number" id="landlineCount" min="0" value="4" title="لینڈ لائن کی تعداد - 'نمبر سیپریٹر' فارمیٹ فعال ہونے پر نکالے جانے والے لینڈ لائن نمبروں کی زیادہ سے زیادہ تعداد مقرر کریں۔">
   
   <label for="voipCount">VOIP:</label>
-  <input type="number" id="voipCount" min="0" value="2" style=" margin-right: 10px;">
+  <input type="number" id="voipCount" min="0" value="2"  title="وی او آئی پی کی تعداد - 'نمبر سیپریٹر' فارمیٹ فعال ہونے پر نکالے جانے والے وی او آئی پی نمبروں کی زیادہ سے زیادہ تعداد مقرر کریں۔">
   
   <label for="pagerCount">Pager:</label>
-  <input type="number" id="pagerCount" min="0" value="2" style=" margin-right: 10px;">
+  <input type="number" id="pagerCount" min="0" value="2"  title="پیجر کی تعداد - 'نمبر سیپریٹر' فارمیٹ فعال ہونے پر نکالے جانے والے پیجر نمبروں کی زیادہ سے زیادہ تعداد مقرر کریں۔">
   
  
-  <br>
+  <label for="wirelessPosition">Wrls At:</label>
+  <select id="wirelessPosition" style="width: 10%" title="وائرلیس کی پوزیشن - لینڈ لائن کے مقابلے میں وائرلیس کالم کو بائیں یا دائیں رکھیں۔">
+    <option value="0">left</option>
+    <option value="1">right</option>
+  </select>
 </div>
 
       <label for="phoneMust">Phone Must:</label>
-      <input type="number" id="phoneMust" name="phoneMust"  min="0" value="1" />
+      <input type="number" id="phoneMust" name="phoneMust"  min="0" value="1" title="فون لازمی - ایک ریکارڈ کو میچ سمجھنے کے لیے درکار فون نمبروں کی کم از کم تعداد مقرر کریں۔" />
 
-      <input type="checkbox" id="emailMust" name="emailMust" value="Email" />
+      <input type="checkbox" id="emailMust" name="emailMust" value="Email" title="ایمیل لازمی - ایک ریکارڈ کو میچ سمجھنے کے لیے کم از کم ایک ای میل پتہ درکار ہونے کے لیے اسے چیک کریں۔" />
       <label for="emailMust">Email Must</label>
 
       <input
@@ -188,6 +194,7 @@
         id="wirelessMust"
         name="wirelessMust"
         value="Wireless"
+        title="وائرلیس لازمی - ایک ریکارڈ کو میچ سمجھنے کے لیے کم از کم ایک وائرلیس فون نمبر درکار ہونے کے لیے اسے چیک کریں۔"
       />
       <label for="wirelessMust">Wireless Must</label>
 
@@ -195,10 +202,11 @@
         type="checkbox"
         id="FindFNameinRelatives"
         name="FindFNameinRelatives"
+        title="رشتہ داروں میں مکمل نام تلاش کریں - صفحہ پر موجود رشتہ داروں کی فہرست میں ہدف کا مکمل نام تلاش کرنے کے لیے اسے چیک کریں۔"
       />
       <label for="FindFNameinRelatives">Find FullName in Relatives</label>
 
-      <input type="checkbox" id="NextBySpace" name="NextBySpace" checked />
+      <input type="checkbox" id="NextBySpace" name="NextBySpace" checked title="اسپیس سے آگے بڑھیں (آٹومیشن) - اسپیس بار دبا کر خود بخود اگلے ریکارڈ پر جانے کے لیے اسے چیک کریں۔" />
       <label for="NextBySpace">Next By Space</label>
       <hr />
 
@@ -219,20 +227,21 @@
           class="tutorial-button"
           target="_blank"
           rel="noopener noreferrer"
+          title="لاگ آؤٹ - اپنے آٹو اسکپ ٹریسر اکاؤنٹ سے لاگ آؤٹ کرنے کے لیے کلک کریں۔"
           >Logout</a
         >
-        <button type="button" id="search-btn">Search</button>
-        <button type="button" id="clear-csv-btn">Clear CSV</button>
-        <button type="button" id="previous_line_btn">Prev Line</button>
-        <button type="button" id="next-line-btn">Next Line</button>
+        <button type="button" id="search-btn" title="تلاش کریں (عمل شروع کریں) - منتخب سی ایس وی اور سیٹنگز کے ساتھ تلاش کا عمل شروع کرنے کے لیے کلک کریں۔">Search</button>
+        <button type="button" id="clear-csv-btn" title="سی ایس وی صاف کریں - بھری ہوئی سی ایس وی فائل اور اس کے ڈیٹا کو صاف کرنے کے لیے کلک کریں۔">Clear CSV</button>
+        <button type="button" id="previous_line_btn" title="پچھلی لائن - سی ایس وی فائل میں پچھلی لائن پر دستی طور پر جانے کے لیے کلک کریں۔">Prev Line</button>
+        <button type="button" id="next-line-btn" title="اگلی لائن - سی ایس وی فائل میں اگلی لائن پر دستی طور پر جانے کے لیے کلک کریں۔">Next Line</button>
       </div>
 
       <!-- CSV File Input & Search Options -->
       <p>Select a CSV file to search for people</p>
-      <input style="width: 31%" type="file" id="csv-file" accept=".csv" />
+      <input style="width: 31%" type="file" id="csv-file" accept=".csv" title="جس ڈیٹا کو آپ تلاش کرنا چاہتے ہیں، اس پر مشتمل سی ایس وی فائل کو براؤز اور منتخب کرنے کے لیے کلک کریں۔" />
 
       <label for="Searchby_flag">Search By:</label>
-      <select style="width: 11%" id="Searchby_flag">
+      <select style="width: 11%" id="Searchby_flag" title="اس کے ذریعے تلاش کریں - سی ایس وی کالموں کی بنیاد پر تلاش کے لیے استعمال ہونے والا بنیادی ڈیٹا منتخب کریں (پتہ، نام، فون، یا ای میل)۔">
         <option value="0">Address (A,B,C)</option>
         <option value="1">Name (D,E,B,C)</option>
         <option value="2">Phone (F)</option>
@@ -240,40 +249,40 @@
       </select>
 
       <label for="showname_flag">Auto Name:</label>
-      <select id="showname_flag">
+      <select id="showname_flag" title="خودکار نام - تلاش کے عمل کے دوران سی ایس وی فائل سے نام خود بخود ڈسپلے کریں۔">
         <option value="1">Yes</option>
         <option value="0">No</option>
       </select>
 
       <label for="openSecondName">Auto 2nd Name:</label>
-      <select id="openSecondName">
+      <select id="openSecondName" title="خودکار دوسرا نام - تلاش کے نتائج میں ملنے والے دوسرے مماثل نام کی پروفائل خود بخود کھولیں۔">
         <option value="1">Yes</option>
         <option value="0">No</option>
       </select>
 	
 	 <label for="relativeOpen">Relative:</label>
-      <select id="relativeOpen">
+      <select id="relativeOpen" title="رشتہ دار - صفحہ پر پائے جانے والے رشتہ داروں کی پروفائلز خود بخود کھولیں۔">
         <option value="1">Yes</option>
         <option value="0">No</option>
       </select>
 	  
       <label for="use-start-end-points-checkbox"> Set Your Tag: </label>
-      <input type="checkbox" id="use-start-end-points-checkbox" />
+      <input type="checkbox" id="use-start-end-points-checkbox" title="اپنا ٹیگ سیٹ کریں - سی ایس وی سے پروسیس کرنے کے لیے لائنوں کی ایک رینج (شروع اور آخر) کی وضاحت کے لیے اسے فعال کریں۔" />
 
       <label for="start-line-input">Start Line:</label>
-      <input type="number" id="start-line-input"   min="0" value="1" disabled />
+      <input type="number" id="start-line-input"   min="0" value="1" disabled title="شروعاتی لائن - سی ایس وی فائل میں وہ لائن نمبر جہاں سے پروسیسنگ شروع کرنی ہے۔" />
 
       <label for="end-line-input">End Line:</label>
-      <input type="number" id="end-line-input"  min="100" value="100" disabled />
+      <input type="number" id="end-line-input"  min="100" value="100" disabled title="آخری لائن - سی ایس وی فائل میں وہ لائن نمبر جہاں پروسیسنگ روکنی ہے۔" />
 
       <label class="labels" for="host">Server:</label>
-      <select class="inputs" id="host" name="host" style="width: 9%">
+      <select class="inputs" id="host" name="host" style="width: 9%" title="سرور - بعض خصوصیات کے لیے سرور کنکشن کو فعال یا غیر فعال کریں۔">
         <option value="0">Disable</option>
         <option value="1">Enable</option>
       </select>
 
       <label class="labels" for="Port">Port:</label>
-      <select class="inputs" id="Port" name="Port">
+      <select class="inputs" id="Port" name="Port" title="پورٹ - کنکشن کے لیے سرور پورٹ منتخب کریں۔">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -301,8 +310,9 @@
           value="JazzCash, EasyPaisa, SadaPay: 03036008080 (Adeeb Ahmad)"
           readonly
           style="width: calc(47ch + 16px)"
+          title="ادائیگی کے طریقے - ادائیگی کرنے کی تفصیلات۔ یہ فیلڈ صرف پڑھنے کے لیے ہے۔"
         />
-        <button type="button" id="openForm">Pay</button>
+        <button type="button" id="openForm" title="ادائیگی کریں (فارم کھولیں) - ادائیگی جمع کروانے کا فارم کھولنے کے لیے کلک کریں۔">Pay</button>
       </div>
 
       <label for="se"> Email :</label>
@@ -312,15 +322,21 @@
         value="AutoSkipTracer@gmail.com"
         readonly
         style="width: calc(20ch + 16px)"
+        title="سپورٹ ای میل - سپورٹ کے لیے اس ای میل پر رابطہ کریں۔ یہ فیلڈ صرف پڑھنے کے لیے ہے۔"
       />
 
       <label for="version">Version:</label>
       <input
         type="text"
         id="version"
+<<<<<<< Updated upstream
         value="2025-10-01"
+=======
+        value="2025-03-05"
+>>>>>>> Stashed changes
         readonly
         style="width: 80px"
+        title="ورژن - ایکسٹینشن کا موجودہ ورژن۔ یہ فیلڈ صرف پڑھنے کے لیے ہے۔"
       />
 
       <label for="clickCount">Leads:</label>
@@ -329,6 +345,7 @@
         value="Calculating"
         readonly
         style="width: calc(8ch + 16px)"
+        title="لیڈز - پروسیس شدہ لیڈز کی تعداد دکھاتا ہے۔ یہ فیلڈ صرف پڑھنے کے لیے ہے۔"
       />
 
       <label for="TotalPayment">Payment:</label>
@@ -338,6 +355,7 @@
         value="0"
         readonly
         style="width: calc(7ch + 16px)"
+        title="کل ادائیگی - موصول شدہ کل ادائیگی کی رقم دکھاتا ہے۔ یہ فیلڈ صرف پڑھنے کے لیے ہے۔"
       />
     </div>
 
@@ -346,14 +364,14 @@
          ========================================= -->
     <div id="paymentModal">
       <div id="paymentModalContent">
-        <span id="closeModal">&times;</span>
+        <span id="closeModal">×</span>
         <h2>Payment Details Form</h2>
         <form id="uploadForm">
           <div class="form-group">
             <label for="userEmail">User Email:</label>
-            <input id="userEmail" name="userEmail" readonly required />
+            <input id="userEmail" name="userEmail" readonly required title="صارف کا ای میل - آپ کا رجسٹرڈ ای میل ایڈریس۔ یہ فیلڈ صرف پڑھنے کے لیے ہے۔" />
             <label for="userId">User ID:</label>
-            <input id="userId" name="userId" readonly required />
+            <input id="userId" name="userId" readonly required title="صارف کی شناخت - آپ کی منفرد صارف شناخت۔ یہ فیلڈ صرف پڑھنے کے لیے ہے۔" />
             <label for="paymentAmount">Amount:</label>
             <input
               type="number"
@@ -361,6 +379,7 @@
               name="paymentAmount"
               min="50"
               required
+              title="ادائیگی کی رقم - آپ نے جو رقم ادا کی ہے اسے درج کریں۔"
             />
           </div>
           <div class="form-group">
@@ -371,11 +390,12 @@
               id="imageInput"
               accept="image/*"
               required
+              title="ادائیگی کا اسکرین شاٹ - اپنی ادائیگی کی رسید کا اسکرین شاٹ اپ لوڈ کرنے کے لیے کلک کریں۔"
             />
             <input type="hidden" name="ImgData" id="ImgData" />
           </div>
           <div class="form-group">
-            <input type="submit" value="Upload" id="uploadBtn" />
+            <input type="submit" value="Upload" id="uploadBtn" title="اپ لوڈ کریں (ادائیگی جمع کروائیں) - اپنی ادائیگی کی تفصیلات اور اسکرین شاٹ تصدیق کے لیے جمع کروانے کے لیے کلک کریں۔" />
           </div>
         </form>
       </div>
@@ -431,14 +451,14 @@
         <form id="loginForm">
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" required title="ای میل - اپنا رجسٹرڈ ای میل ایڈریس درج کریں۔" />
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
+            <input type="password" id="password" name="password" required title="پاس ورڈ - اپنا پاس ورڈ درج کریں۔" />
           </div>
-          <button type="submit" class="btn">Login</button>
-          <button id="forget" class="btn">Forget password</button>
+          <button type="submit" class="btn" title="لاگ ان - اپنے اکاؤنٹ میں لاگ ان کرنے کے لیے کلک کریں۔">Login</button>
+          <button id="forget" class="btn" title="پاس ورڈ بھول گئے - اگر آپ اپنا پاس ورڈ بھول گئے ہیں تو بازیابی کا عمل شروع کرنے کے لیے کلک کریں۔">Forget password</button>
         </form>
 
         <!-- Sign Up Form -->
@@ -452,6 +472,7 @@
                 name="fullName"
                 pattern="\+?[A-Za-z ]{3,30}"
                 required
+                title="پورا نام - اپنا پورا نام درج کریں۔"
               />
             </div>
             <div class="form-group">
@@ -461,6 +482,7 @@
                 id="signupEmail"
                 name="signupEmail"
                 required
+                title="ای میل - اکاؤنٹ بنانے کے لیے اپنا ای میل ایڈریس درج کریں۔"
               />
             </div>
           </div>
@@ -472,6 +494,7 @@
                 id="signupPassword"
                 name="signupPassword"
                 required
+                title="پاس ورڈ - اپنے اکاؤنٹ کے لیے ایک پاس ورڈ بنائیں۔"
               />
             </div>
             <div class="form-group">
@@ -481,7 +504,7 @@
                 id="whatsapp"
                 name="whatsapp"
                 pattern="\+?[0-9\s]{10,15}"
-                title="Phone number should be 10-15 digits, with optional spaces and a leading +."
+                title="واٹس ایپ نمبر - مواصلات کے لیے اپنا واٹس ایپ نمبر درج کریں (10-15 ہندسے، اسپیس اور '+' کی اجازت ہے)۔"
                 required
               />
             </div>
@@ -489,14 +512,14 @@
           <div class="form-row">
             <div class="form-group">
               <label for="city">City</label>
-              <input type="text" id="city" name="city" required />
+              <input type="text" id="city" name="city" required title="شہر - اپنا موجودہ شہر درج کریں۔" />
             </div>
             <div class="form-group">
               <label for="reference">Reference</label>
-              <input type="text" id="reference" name="reference" />
+              <input type="text" id="reference" name="reference" title="حوالہ - اگر کسی نے آپ کو ریفر کیا ہے، تو یہاں اس کا نام یا شناخت درج کریں۔" />
             </div>
           </div>
-          <button type="submit" class="btn">Sign Up</button>
+          <button type="submit" class="btn" title="سائن اپ کریں - اپنا نیا اکاؤنٹ بنانے کے لیے کلک کریں۔">Sign Up</button>
         </form>
       </div>
     </div>
@@ -515,5 +538,6 @@
     <script src="jquery.min.js"></script>
     <script src="popup.js"></script>
     <script src="script.js"></script>
+    <script src="Login.js"></script>
   </body>
 </html>
