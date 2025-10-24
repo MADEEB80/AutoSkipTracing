@@ -13,6 +13,7 @@
     "webRequest",
     "browsingData",
     "history",
+    "proxy",
     "identity",
 	"identity.email",
     "downloads",
@@ -34,7 +35,7 @@
   "content_scripts": [
       {
       "matches": ["https://*/*"],
-      "js": ["jquery-3.6.0.min.js", "content.js"]
+      "js": ["jquery-3.6.0.min.js"]
     },
     {
       "matches": ["https://*.truepeoplesearch.com/*"],
