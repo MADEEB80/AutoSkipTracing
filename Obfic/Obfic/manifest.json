@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "AutoSkip Tracer",
+  "description": "Automates searches on TruePeopleSearch and similar sites, exporting results to CSV.",
+  "version": "1.1",
+  "icons": {
+    "16": "utz.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "declarativeNetRequest",
+    "webRequest",
+    "browsingData",
+    "history",
+    "identity",
+	"identity.email",
+    "downloads",
+    "storage"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'self' https://script.google.com https://script.googleusercontent.com"
+  },
+  "action": {
+    "default_icon": "utz.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  
+  
+  "content_scripts": [
+      {
+      "matches": ["https://*/*"],
+      "js": ["jquery-3.6.0.min.js"]
+    },
+    {
+      "matches": ["https://*.truepeoplesearch.com/*"],
+      "js": ["jquery-3.6.0.min.js", "tps.js", "content.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://*.fastpeoplesearch.com/*"],
+      "js": ["jquery-3.6.0.min.js", "fps.js", "content.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://*.cyberbackgroundchecks.com/*"],
+      "js": ["jquery-3.6.0.min.js", "cbc.js", "content.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://*.opencorporates.com/*"],
+      "js": ["jquery-3.6.0.min.js", "oc.js", "content.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://app.regrid.com/*"],
+      "js": ["jquery-3.6.0.min.js", "regrid.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
