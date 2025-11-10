@@ -13,15 +13,13 @@
     "webRequest",
     "browsingData",
     "history",
-    "proxy",
     "identity",
 	"identity.email",
     "downloads",
-    "storage",
-    "notifications"
-  ],"host_permissions": ["https://ast.urdutechzone.com/*"],
+    "storage"
+  ],
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'self' https://ast.urdutechzone.com"
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'self' https://script.google.com https://script.googleusercontent.com"
   },
   "action": {
     "default_icon": "utz.png",
